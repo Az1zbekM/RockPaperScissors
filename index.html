@@ -6,6 +6,7 @@
         <title>Game</title>
     </head>
     <body>
+    
     <p>Rock Paper Scissors</p>  
         <button onclick="
         playGame('rock')
@@ -18,9 +19,11 @@
 
         <button onclick="
         playGame('scissors')
-        "
-        >Scissors</button>
+        
+        ">Scissors</button>
 
+        <p class="js-result"></p>
+        <p class="js-moves"></p>
         <p class="js-score"></p>
 
         <button onclick="
@@ -30,6 +33,11 @@
             localStorage.removeItem('score');
             updateScoreElement();
         ">Reset score</button>
+
+
+
+
+
 <script src="rockpaperscissors.js">
 </script>
 

@@ -4,7 +4,7 @@
             ties: 0
         };
          
-        updateScoreElement()
+        updateScoreElement();
    
          // first way
 
@@ -51,8 +51,8 @@ result = 'You won.';
 if (computerMove === 'rock') {
 result = 'You won.';
 } else if (computerMove === 'paper'){
-result = 'Tie.';
-} else if (computerMove === 'scissors'){
+result = 'Tie.';}
+ else if (computerMove === 'scissors'){
 result = 'You lose.';
 }
 }
@@ -63,15 +63,21 @@ if (result === 'You won.') {
     score.losses += 1;
 } else if(result === 'Tie.') {
     score.ties += 1;
-}
+};
 
 localStorage.setItem('score', JSON.stringify(score));
 
 updateScoreElement();
 
-alert(`You picked ${playerMove}. Computer picked ${computerMove}. ${result}
-Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`);
-}
+document.querySelector('.js-result').innerHTML = result;
+
+document.querySelector('.js-moves').innerHTML = `You ${playerMove} - ${computerMove}`;
+
+
+
+    // alert(`You picked ${playerMove}. Computer picked ${computerMove}. ${result}
+    // Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`);
+    };
 
 function updateScoreElement() {
      document.querySelector('.js-score').innerHTML = `Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`
@@ -91,4 +97,4 @@ computerMove = 'paper';
 } else if(randomNum >= 2/3 && randomNum < 1) {
 computerMove = 'scissors';
 }
-}
+};
