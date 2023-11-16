@@ -9,13 +9,14 @@ body{
 }
 .buttonst{
     background-color: transparent;
-    border: 3px solid white ;
+    border: 3px solid rgb(255, 0, 0) ;
     width: 120px;
     height: 120px;
     border-radius: 60px;
     cursor: pointer;
 }
 .result{
+    color: red;
     font-size: 25px;
     font-weight: bold;
     margin-top: 50px;
@@ -24,12 +25,43 @@ body{
     height: 50px;
 }
 .score{
+    color: red;
     margin-top:60px ;
 }
 .resetscore{
-    background-color: white;
+    background-color: rgb(255, 0, 0);
     border: none;
     font-size: 15px;
+    font-weight: bold;
     padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.div1{
+    display: flex;
+    justify-content: center;
+    color: red;
+}
+.div2{
+    width: 150px;
+    height: 100px;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+.div3{
+    display: flex;
+    justify-content: center;
+}
+.div4{
+    display: flex;
+    justify-content: center;
+}
+.js-moves{
+    display: flex;
+    gap: 10px;
+    align-items: center;
     cursor: pointer;
 }

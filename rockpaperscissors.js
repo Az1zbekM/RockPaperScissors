@@ -33,35 +33,35 @@ function playGame(playerMove) {
 let result = ''
 if (playerMove === 'scissors') {
 if (computerMove === 'rock') {
-result = 'You lose.';
+result = 'You lose';
 } else if (computerMove === 'paper'){
-result = 'You won.';
+result = 'You won';
 } else if (computerMove === 'scissors'){
-result = 'Tie.';
+result = 'Ties';
 }
 } else if (playerMove === 'rock'){
 if (computerMove === 'rock') {
-result = 'Tie.';
+result = 'Ties';
 } else if (computerMove === 'paper'){
-result = 'You lose.';
+result = 'You lose';
 } else if (computerMove === 'scissors'){
-result = 'You won.';
+result = 'You won';
 }
 } else if(playerMove === 'paper') {
 if (computerMove === 'rock') {
-result = 'You won.';
+result = 'You won';
 } else if (computerMove === 'paper'){
-result = 'Tie.';}
+result = 'Ties';}
  else if (computerMove === 'scissors'){
-result = 'You lose.';
+result = 'You lose';
 }
 }
 
-if (result === 'You won.') {
+if (result === 'You won') {
     score.wins += 1;
-} else if(result === 'You lose.') {
+} else if(result === 'You lose') {
     score.losses += 1;
-} else if(result === 'Tie.') {
+} else if(result === 'Ties') {
     score.ties += 1;
 };
 
@@ -71,10 +71,10 @@ updateScoreElement();
 
 document.querySelector('.js-result').innerHTML = result;
 
-document.querySelector('.js-moves').innerHTML = ` You
+document.querySelector('.js-moves').innerHTML = ` You. 
             <img class="imgst" src="images/${playerMove}-emoji.png" alt="">
             <img class="imgst" src="images/${computerMove}-emoji.png" alt="">
-            Computer`;
+            Comp.`;
 
 
 
@@ -101,3 +101,12 @@ computerMove = 'paper';
 computerMove = 'scissors';
 }
 };
+
+ function subscribe() {
+const buttonElement = document.querySelector('.btny');
+    if (buttonElement.innerText === 'Clear') {
+        buttonElement.innerHTML = 'Cleared';
+    } else{
+        buttonElement.innerHTML = 'Clear';
+    }
+       };   

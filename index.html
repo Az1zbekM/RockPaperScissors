@@ -8,8 +8,8 @@
     </head>
     <body>
     
-    <p class="p1">Rock Paper Scissors</p>  
-        <button class="buttonst" onclick="
+   <div class="div1"> <p class="p1">Rock Paper Scissors</p>  </div>
+    <div class="div1">  <button class="buttonst" onclick="
         playGame('rock')
         "><img src="images/rock-emoji.png" class="imgst" alt=""></button>
         
@@ -22,20 +22,22 @@
         playGame('scissors')
         
         "><img src="images/scissors-emoji.png" class="imgst" alt=""></button>
+    </div>
 
-        <p class="js-result result"></p>
-        <p class="js-moves">
-        </p>
-        <p class="js-score score"></p>
+        
+       <div class="div1"><div class="div2"><p class="js-result result"></p></div></div>
+       <div class="div1"> <p class="js-moves"></p></div>
+        <div class="div3"><p class="js-score score"></p></div>
 
-        <button onclick="
+     <div class="div4">   <button onclick="
             score.wins = 0;
             score.losses = 0;
             score.ties = 0;
             localStorage.removeItem('score');
             updateScoreElement();
-        " class="resetscore">Reset score</button>
-
+            subscribe()
+        " class="resetscore btny" >Clear</button>
+    </div>
 
 
 
