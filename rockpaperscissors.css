@@ -65,3 +65,8 @@ body{
     align-items: center;
     cursor: pointer;
 }
+.div5{
+     display: flex;
+    justify-content: center;
+    gap: 10px;
+}
