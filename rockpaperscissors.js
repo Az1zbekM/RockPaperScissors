@@ -109,4 +109,4 @@ const buttonElement = document.querySelector('.btny');
     } else{
         buttonElement.innerHTML = 'Clear';
     }
-       };   
+       };           
